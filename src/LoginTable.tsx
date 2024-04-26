@@ -31,17 +31,30 @@ function Login() {
     color: "#4bb4f8",
     textDecoration: "none",
   };
+
+  const textGetApp = {
+    alignItems: "center",
+  };
+
   return (
     <>
       <div className="LoginTemplate">
         <div className="LoginLayout">
-          <div className="InstagramLogoLayout">
-            <img className="instagramImage" src={Instagram} />
-          </div>
+          <img className="instagramImage" src={Instagram} />
           <div className="usernameInput">
+            <input
+              className="loginInput UsernameBoxInput"
+              type="text"
+              required
+            />
             <p style={space}>Phone number, username, or email</p>
           </div>
           <div className="passwordInput">
+            <input
+              className="loginInput PasswordBoxInput"
+              type="text"
+              required
+            />
             <p style={space}>Password</p>
           </div>
           <button className="buttonLogin">Log in</button>
@@ -63,19 +76,21 @@ function Login() {
         </div>
         <div className="CreateAccount">
           <p>
-            Don't have an account?{" "}
+            Don't have an account?
             <a
               style={singUp}
               href="https://www.instagram.com/accounts/emailsignup/"
             >
-              Sing up
+              ﾠSing up
             </a>
           </p>
         </div>
-        <p> Get the app</p>
-        <div className="getApps">
-          <img style={stylesGooglePlay} src={googlePlay} />
-          <img style={stylesMicrosoft} src={microsoft} />
+        <div className="getAppsDiv">
+          <p> Get the app</p>
+          <div className="getApps">
+            <img style={stylesGooglePlay} src={googlePlay} />
+            <img style={stylesMicrosoft} src={microsoft} />
+          </div>
         </div>
       </div>
     </>

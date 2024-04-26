@@ -8,7 +8,7 @@ function App() {
   return (
     <main className="Main">
       <div className="PhoneContainer">
-        <div>
+        <div className="phone">
           <PhoneItem />
         </div>
         <div>

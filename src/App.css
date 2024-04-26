@@ -6,7 +6,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255); 
 }
 .Item{
     justify-content: center;
@@ -65,9 +65,9 @@
     flex-direction:row;
     background-color:   rgb(255, 255, 255);
     
-    }
+}
 .LoginTemplate{
-    height: 700px;
+    height: 630px;
     width:  350px;
     position: relative;
     display: flex;
@@ -78,6 +78,17 @@
     background-color:rgb(255, 255, 255); 
     margin-top: -70px;
 }
+.getAppsDiv{
+    height: 53;
+    width:  350px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;;
+    gap:10px
+}
+
 .getApps{
     height: 53;
     width:  350px;
@@ -92,6 +103,9 @@
 .instagramImage{
     width: 180px;
     height: 70px; 
+    cursor: pointer;
+    margin-top: 10px;
+    
 }
 .InstagramLogoLayout{
     width: 210px;
@@ -185,12 +199,13 @@
 }
 .facebookButtonPng{
     border: none;
+    cursor: pointer ;
    
 }
 .logWithFacebookDiv{
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: 650;
-    font-size: 12px;
+    font-weight: 620;
+    font-size: 14px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -198,8 +213,57 @@
     gap:12px;
     margin-top: 20px;
     color:#385185;
+    cursor: pointer;
  
 }
 .PhotoHomeConfig{
     position: absolute;
 }
+.UsernameBoxInput{
+    width: 237px;
+    position: absolute;
+    border-radius: 0px;
+    padding: 10px;
+    justify-content: end;
+    background: transparent;   
+    border:1px solid #dbdbdb ;
+}
+.PasswordBoxInput{
+    width: 237px;
+    position: absolute;
+    border-radius: 0px;
+    padding: 10px;
+    justify-content: end;
+    background: transparent;  
+    border:1px solid #dbdbdb ;
+    
+}
+
+@media only screen and (max-width: 870px) {
+    .phone{
+        display: none;
+    }
+  }
+
+  @media only screen and (max-width: 453px) {
+    .LoginLayout{
+        border-style: none;
+        top: 10px;
+    }
+    .CreateAccount{
+        border-style: none;
+        position: relative;
+        top: 30px;
+    }
+    .PhoneContainer{
+        height: 400px;
+        width: 465px;
+        align-items: top;
+    }
+    .LoginTemplate{
+        margin-top: -300px;
+    }
+    .getAppsDiv{
+        top: 95px;;
+    }
+  }
