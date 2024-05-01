@@ -1,0 +1,39 @@
+.phone {
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 250px;
+    border: none;
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    left: -19px;
+}
+
+.phone_placeholder {
+    justify-content: center;
+    border: none;
+}
+
+@media only screen and (max-width: 870px) {
+    .phone {
+        display: none;
+    }
+}
+
+.photo_animation{
+    animation:  fadeInAnimation ease 20s infinite;
+    animation-delay: 5s;
+    background: url(../../assets/phone_transition_1.png);
+    height: 541px;
+    width: 250px;
+    margin-top: 500px;
+}
+
+@keyframes fadeInAnimation {
+    0%{ background:url(../../assets/phone_transition_1.png) ; }
+    25%{ background:url(../../assets/phone_transition_2.png) ; }
+    50%{ background: url(../../assets/phone_transition_3.png);}
+    75%{ background: url(../../assets/phone_transition_4.png);}
+    100%{ background:url(../../assets/phone_transition_1.png) ; }
+}

@@ -1,15 +1,13 @@
-import Login from "./LoginTable";
+import Login from "./components/Login/Login";
+import Phone from "./components/Phone/Phone";
 import "./App.css";
-import PhoneItem from "./Phone";
-
-("./Phone.tsx");
 
 function App() {
   return (
-    <main className="Main">
-      <div className="PhoneContainer">
-        <div className="phone">
-          <PhoneItem />
+    <main className="container">
+      <div className="container_phone">
+        <div>
+          <Phone />
         </div>
         <div>
           <Login />

@@ -1,0 +1,242 @@
+.form_apps_googleplay {
+    height: 40px;
+    width: 134px;
+}
+
+.form_apps_microsoft {
+    height: 40px;
+    width: 110px;
+}
+
+.form_container {
+    width: 340px;
+    height: 404px;
+    border-radius: 0px;
+    background-color: #ffffff;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #dbdbdb;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: top;
+    flex-direction: column;
+}
+
+.form_or {
+    font-size: 12px;
+    color: #5d5d5d;
+}
+
+.form_space {
+    padding: 9px 0 7px 8px;
+}
+
+.form_recover_password {
+    font-size: 14px;
+    margin-top: 12px;
+    text-decoration: none;
+    color: #385185;
+}
+
+.form_signup {
+    color: #4bb4f8;
+    text-decoration: none;
+}
+
+.textGetApp {
+    align-items: center;
+}
+
+.form_logo {
+    width: 180px;
+    height: 70px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.form_username {
+    height: 38px;
+    width: 258px;
+    border-radius: 0px;
+    background-color: #fafafa;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #dbdbdb;
+    color: #8f8f8f;
+    position: relative;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 30px;
+    border-radius: 2px;
+    font-size: 12px;
+    text-align: left
+}
+
+.form_username_input {
+    width: 237px;
+    position: absolute;
+    border-radius: 0px;
+    padding: 10px;
+    justify-content: end;
+    background: transparent;
+    border: 1px solid #dbdbdb;
+}
+
+.form_password {
+    height: 38px;
+    width: 258px;
+    border-radius: 0px;
+    background-color: #fafafa;
+    border-style: solid;
+    border-width: 1px;
+    color: #8f8f8f;
+    border-color: #dbdbdb;
+    position: relative;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 6px;
+    border-radius: 2px;
+    font-size: 12px;
+    text-align: left;
+}
+
+.form_password_input {
+    width: 237px;
+    position: absolute;
+    border-radius: 0px;
+    padding: 10px;
+    justify-content: end;
+    background: transparent;
+    border: 1px solid #dbdbdb;
+}
+
+.form_hr_container {
+    align-items: center;
+    grid-row: auto;
+    justify-content: center;
+    flex-direction: row;
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.form_login {
+    height: 35px;
+    width: 270px;
+    border: none;
+    background-color: #4bb4f8;
+    border-style: solid;
+    border-width: 1px;
+    color: #ffffff;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 15px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.form_hr {
+    width: 110px;
+    color: #e6e6e6e9;
+    border-radius: 1px;
+    border-style: solid;
+}
+
+.login_container {
+    height: 630px;
+    width: 350px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgb(255, 255, 255);
+    margin-top: -70px;
+}
+
+.form_apps_container {
+    height: 53;
+    width: 350px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form_apps {
+    height: 53;
+    width: 350px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    ;
+    background-color: rgb(255, 255, 255);
+    gap: 10px
+}
+
+.form_facebook_button {
+    border: none;
+    cursor: pointer;
+}
+
+.form_facebook {
+    font-weight: 620;
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-top: 20px;
+    color: #385185;
+    cursor: pointer;
+}
+
+.form_create_account {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 0px;
+    background-color: #ffffff;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #dbdbdb;
+    width: 340px;
+    height: 63px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 453px) {
+    .form_create_account {
+        border-style: none;
+        position: relative;
+        top: 30px;
+    }
+
+    .form_apps_container {
+        top: 95px;
+    }
+
+    .login_container {
+        margin-top: -300px;
+    }
+
+    .form_container {
+        border-style: none;
+        top: 10px;
+    }
+}
