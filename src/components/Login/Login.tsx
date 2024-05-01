@@ -9,13 +9,13 @@ function Login() {
     <div className="login_container">
       <div className="form_container">
         <img className="form_logo" src={image_instagram} />
-        <div className="form_username">
-          <input className="form_username_input" type="text" required />
-          <p className="form_space">Phone number, username, or email</p>
+        <div className="form_input">
+          <input type="text" placeholder="" required />
+          <label>Telefone, nome de usuário ou email</label>
         </div>
-        <div className="form_password">
-          <input className="form_password_input" type="text" required />
-          <p className="form_space">Password</p>
+        <div className="form_input">
+          <input type="password" placeholder="" required />
+          <label>Senha</label>
         </div>
         <button className="form_login">Log in</button>
         <div className="form_hr_container">

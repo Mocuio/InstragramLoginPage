@@ -12,7 +12,7 @@
 .container_phone {
     height: 635px;
     width: 465px;
-    position: absolute;
+    /* position: absolute; */
     display: flex;
     align-items: center;
     justify-content: center;

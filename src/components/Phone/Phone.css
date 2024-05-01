@@ -1,13 +1,14 @@
-.phone {
+.phone_animation_container {
     justify-content: center;
     align-items: center;
     height: 100px;
     width: 250px;
     border: none;
     display: flex;
-    position: absolute;
     flex-direction: row;
-    left: -19px;
+    left: 157px;
+    top: 98px;
+    position: relative;
 }
 
 .phone_placeholder {
@@ -16,12 +17,13 @@
 }
 
 @media only screen and (max-width: 870px) {
-    .phone {
+    .phone_container {
         display: none;
     }
 }
 
-.photo_animation{
+.photo_animation {
+    position: absolute;
     animation:  fadeInAnimation ease 20s infinite;
     animation-delay: 5s;
     background: url(../../assets/phone_transition_1.png);

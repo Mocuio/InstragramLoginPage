@@ -1,5 +1,6 @@
 import Login from "./components/Login/Login";
 import Phone from "./components/Phone/Phone";
+import Links from "./components/Links/Links";
 import "./App.css";
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
           <Login />
         </div>
       </div>
+      <Links />
     </main>
   );
 }
