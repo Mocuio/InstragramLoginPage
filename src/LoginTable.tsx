@@ -16,11 +16,6 @@ function Login() {
     width: "110px",
     fontFamily: "Times New Roman, Times, serif",
   };
-
-  const space = {
-    padding: "9px 0 7px 8px",
-  };
-
   const recuperarSenha = {
     fontSize: "14px",
     marginTop: "12px",
@@ -32,30 +27,20 @@ function Login() {
     textDecoration: "none",
   };
 
-  const textGetApp = {
-    alignItems: "center",
-  };
-
   return (
     <>
       <div className="LoginTemplate">
         <div className="LoginLayout">
           <img className="instagramImage" src={Instagram} />
-          <div className="usernameInput">
-            <input
-              className="loginInput UsernameBoxInput"
-              type="text"
-              required
-            />
-            <p style={space}>Phone number, username, or email</p>
+
+          <div className="input-field">
+            <input type="text" placeholder="" />
+            <label>Telefone, nome de usuário ou email</label>
           </div>
-          <div className="passwordInput">
-            <input
-              className="loginInput PasswordBoxInput"
-              type="text"
-              required
-            />
-            <p style={space}>Password</p>
+
+          <div className="input-field">
+            <input type="password" placeholder="" />
+            <label>Senha</label>
           </div>
           <button className="buttonLogin">Log in</button>
 
@@ -64,6 +49,7 @@ function Login() {
             <p className="p">OR</p>
             <hr className="hrConfig" />
           </div>
+
           <div className="logWithFacebookDiv">
             <button className="facebookButtonPng">
               <img width="18px" src={facebookIcon} />

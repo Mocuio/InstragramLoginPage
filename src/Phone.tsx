@@ -1,16 +1,13 @@
 import homePhones from "./components/phonePictures/home-phones.png";
 import "./App.css";
-import PhotosTransition from "./components/phonePictures/PhotosLoopFunction.tsx";
+import "./components/phonePictures/PhotosLoop.css";
+
 function PhoneItem() {
   return (
-    <>
-      <div>
-        <div className="PhoneScreen">
-          <PhotosTransition />
-        </div>
-        <img className="item" src={homePhones} />
-      </div>
-    </>
+    <div>
+      <img src={homePhones} alt="" />
+      <div className="animatioPhoto1"></div>
+    </div>
   );
 }
 export default PhoneItem;

@@ -5,7 +5,10 @@
     background: url(photo1.png);
     height: 541px;
     width: 250px;
-    margin-top: 500px;
+    position: relative;
+    top: -612px;
+    right: -156px;
+
 
 }
 @keyframes fadeInAnimation {

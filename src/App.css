@@ -1,3 +1,4 @@
+
 .Main{
     min-height: 100vh;
     width: 100%;
@@ -5,8 +6,20 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
+    overflow: hidden;
     background-color: rgb(255, 255, 255); 
+}
+.RootLinks{
+height: 50px;
+width: 50px;
+position: relative;
+align-items: center;
+display: flex;
+align-items: center;
+justify-content: center ;
+top: 500px;
+
 }
 .Item{
     justify-content: center;
@@ -14,6 +27,19 @@
     width: 581px;
     border: none;
 }
+.phone{
+    position: relative;
+    height: 541px;
+    justify-content:left;
+    
+}
+
+.phone2 {
+    position: relative;
+    height: 541px;
+    justify-content: center;
+}
+
 .PhoneScreen{
     justify-content: center;
     align-items: center;
@@ -21,9 +47,9 @@
     width: 250px;
     border: none;
     display: flex;
-    position: absolute;
+    position: relative;
     flex-direction: row;
-    left: -19px;
+
 }
 .LoginLayout{
     width: 340px;
@@ -58,7 +84,7 @@
 .PhoneContainer{
     height: 635px;
     width: 465px;
-    position: absolute;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -76,8 +102,8 @@
     flex-direction:column;
     gap: 10px;
     background-color:rgb(255, 255, 255); 
-    margin-top: -70px;
 }
+
 .getAppsDiv{
     height: 53;
     width:  350px;
@@ -104,8 +130,7 @@
     width: 180px;
     height: 70px; 
     cursor: pointer;
-    margin-top: 10px;
-    
+    margin-top: 50px;    
 }
 .InstagramLogoLayout{
     width: 210px;
@@ -116,49 +141,46 @@
     display: flex;
     flex-direction: column;
     background-color: rgb(255, 255, 255);
-    margin-top: 40px;
 }
-.usernameInput{
-    height: 38px;
-    width: 258px;
-    border-radius: 0px;
-    background-color: #fafafa;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #dbdbdb;
-    color: #8f8f8f;
+ .input-field{
     position: relative;
-    display: flex;
-    align-items: left;
-    justify-content: center;
-    flex-direction:column;
-    margin-top: 30px;
-    border-radius: 2px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
-    text-align: left
-}
-.passwordInput{
-    height: 38px;
-    width: 258px;
-    border-radius: 0px;
-    background-color: #fafafa;
-    border-style: solid;
-    border-width: 1px;
-    color: #8f8f8f;
-    border-color: #dbdbdb;
-    position: relative;
-    display: flex;
-    align-items: left;
-    justify-content: center;
-    flex-direction:column;
-    margin-top: 6px;
-    border-radius: 2px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
-    text-align: left;
+    margin-top: 5px;
+ }
 
+ .input-field input{
+    padding: 14px 0 2px 8px !important;
+   
+    width:259px ;
+    background-color: rgb(252, 252, 252);
+    border: 1px solid #ece6e6;
+    border-radius: 2px;
+    outline: none;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    transition: 0.4s;    
 }
+ .input-field label{
+    position: absolute;
+    top: 13px;
+    font-size: 12px;
+    left: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #8e8e8e;
+    pointer-events: none;
+    transition: 0.2s;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+ }
+
+ .input-field input:not(:placeholder-shown) + label{
+    top: -2px;
+    color: #4a4a4a;
+    font-size: 10px;
+    margin-top: 5px;
+    opacity: 1;
+ }
+
 .buttonLogin{
     height: 35px;
     width: 270px;
@@ -219,15 +241,7 @@
 .PhotoHomeConfig{
     position: absolute;
 }
-.UsernameBoxInput{
-    width: 237px;
-    position: absolute;
-    border-radius: 0px;
-    padding: 10px;
-    justify-content: end;
-    background: transparent;   
-    border:1px solid #dbdbdb ;
-}
+
 .PasswordBoxInput{
     width: 237px;
     position: absolute;
