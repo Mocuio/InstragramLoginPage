@@ -12,7 +12,6 @@
     width: 340px;
     height: 404px;
     border-radius: 0px;
-    background-color: #ffffff;
     border-style: solid;
     border-width: 1px;
     border-color: #dbdbdb;
@@ -95,7 +94,6 @@
     justify-content: center;
     flex-direction: column;
     gap: 10px;
-    background-color: rgb(255, 255, 255);
     margin-top: -70px;
 }
 
@@ -118,9 +116,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    ;
-    background-color: rgb(255, 255, 255);
-    gap: 10px
+    gap: 10px;
 }
 
 .form_facebook_button {
@@ -146,7 +142,6 @@
     align-items: center;
     display: flex;
     border-radius: 0px;
-    background-color: #ffffff;
     border-style: solid;
     border-width: 1px;
     border-color: #dbdbdb;
@@ -164,17 +159,16 @@
 
 .form_input input {
     padding: 14px 0 2px 8px !important;
-    width:259px ;
-    background-color: rgb(252, 252, 252);
+    width: 259px;
     border: 1px solid #ece6e6;
     border-radius: 2px;
     outline: none;
     font-size: 15px;
     font-family: 'Times New Roman', Times, serif;
-    transition: 0.4s;    
+    transition: 0.4s;
 }
 
-.form_input input:not(:placeholder-shown) + label {
+.form_input input:not(:placeholder-shown)+label {
     top: -2px;
     color: #4a4a4a;
     font-size: 10px;

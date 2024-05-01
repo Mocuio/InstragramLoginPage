@@ -6,24 +6,20 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: rgb(255, 255, 255);
 }
 
 .container_phone {
     height: 635px;
     width: 465px;
-    /* position: absolute; */
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    background-color: rgb(255, 255, 255);
 }
 
 @media only screen and (max-width: 453px) {
     .container_phone {
         height: 400px;
         width: 465px;
-        align-items: top;
     }
 }
