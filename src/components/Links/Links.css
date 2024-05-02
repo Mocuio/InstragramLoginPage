@@ -1,0 +1,21 @@
+.links_container > div {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    font-size: 12px;
+    color: gray;
+}
+
+.links_container > div:nth-child(1) {
+    margin-top: 100px;
+}
+
+.links_container > div:nth-child(3) {
+    justify-content: center;
+}
+
+@media only screen and (max-width: 870px) {
+    .links_container {
+        display: none;
+    }
+}
