@@ -14,6 +14,7 @@
 .phone_placeholder {
     justify-content: center;
     border: none;
+    top:-20px;
 }
 
 @media only screen and (max-width: 870px) {
