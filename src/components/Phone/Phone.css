@@ -17,7 +17,7 @@
     top:-20px;
 }
 
-@media only screen and (max-width: 870px) {
+@media only screen and (max-width: 860px) {
     .phone_container {
         display: none;
     }
