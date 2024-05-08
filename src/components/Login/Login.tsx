@@ -2,34 +2,85 @@ import image_googleplay from "../../assets/icon_googleplay.png";
 import image_microsoft from "../../assets/icon_microsoft.png";
 import image_instagram from "../../assets/instagram.png";
 import image_facebook from "../../assets/icon_facebook.png";
+import { userSchemaPassword } from "../validations/UserValidation";
+import { userSchemaUser } from "../validations/UserValidation";
+import { useState, useEffect } from "react";
+import { Formik, Field, Form } from "formik";
 import "./Login.css";
-import { Formik, Form, Field, ErrorMessage } from "formik";
-import * as yup from "yup";
 
 function Login() {
+  const [style, setStyle] = useState("form_login_light");
+  const [PasswordCharacterNumbers, setPasswordCharacterNumbers] =
+    useState(false);
+  const [UsercharacterNumbers, setUserCharacterNumbers] = useState(false);
+
+  const getUserPassword = async (event: any) => {
+    event.preventDefault();
+    const password: string = event.target.value;
+    const isValidPassword = await userSchemaPassword.isValid({
+      senha: password,
+    });
+    setPasswordCharacterNumbers(isValidPassword);
+  };
+
+  function changeBottonStyle() {
+    if (PasswordCharacterNumbers && UsercharacterNumbers == true) {
+      setStyle("form_login_dark");
+      (document.getElementById("loggin-button") as any).disabled = false;
+    } else {
+      setStyle("form_login_light");
+      (document.getElementById("loggin-button") as any).disabled = true;
+    }
+  }
+
+  useEffect(() => {
+    changeBottonStyle();
+  }, [PasswordCharacterNumbers, UsercharacterNumbers]);
+
+  const getUserInfo = async (event: any) => {
+    event.preventDefault();
+    const user = event.target.value;
+    const isValidUser = await userSchemaUser.isValid({ email: user });
+    setUserCharacterNumbers(isValidUser);
+  };
+
   return (
     <div className="login_container">
       <div className="form_container">
         <img className="form_logo" src={image_instagram} />
         <div className="form_config_div_input">
-          <div className="form_input">
-            <input name="userInput" type="text" placeholder="" required />
-            <label>Telefone, nome de usuário ou email</label>
-          </div>
-          <div className="form_input">
-            <input
-              name="passwordInput"
-              type="password"
-              placeholder=""
-              required
-            />
-            <label>Senha</label>
-          </div>
+          <Formik
+            initialValues={{ email: "", password: "" }}
+            onSubmit={async (values) => {
+              await new Promise((resolve) => setTimeout(resolve, 500));
+              alert(JSON.stringify(values, null, 1));
+            }}
+          >
+            <Form className="form">
+              <div className="form_input" onChange={getUserInfo}>
+                <Field name="email" type="text" placeholder="" required />
+                <label>Telefone, nome de usuário ou email</label>
+              </div>
+
+              <div className="form_input" onChange={getUserPassword}>
+                <Field
+                  name="password"
+                  type="password"
+                  placeholder=""
+                  required
+                />
+                <label>Senha</label>
+              </div>
+
+              <button type="submit" className={style} id="loggin-button">
+                Entrar
+              </button>
+            </Form>
+          </Formik>
         </div>
-        <button className="form_login">Log in</button>
         <div className="form_hr_container">
           <hr className="form_hr" />
-          <p className="form_or">OR</p>
+          <p className="form_or">OU</p>
           <hr className="form_hr" />
         </div>
         <div className="form_facebook">
